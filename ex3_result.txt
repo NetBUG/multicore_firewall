@@ -1,11 +1,164 @@
 Experiment 1. Parallel overhead
+2310 pkts / ms
+3285 pkts / ms
 Iteration 1: 
+2351 pkts / ms
+3268 pkts / ms
 Iteration 2: 
+2074 pkts / ms
+3297 pkts / ms
 Iteration 3: 
-Experiment 1. Parallel overhead
-Iteration 1: 
-Iteration 2: 
-Iteration 3: 
+3230 pkts / ms
+3264 pkts / ms
 Iteration 4: 
+2560 pkts / ms
+3164 pkts / ms
 Iteration 5: 
+1785 pkts / ms
+2524 pkts / ms
 Iteration 6: 
+1624 pkts / ms
+2476 pkts / ms
+Iteration 7: 
+1759 pkts / ms
+2482 pkts / ms
+Iteration 8: 
+1596 pkts / ms
+2466 pkts / ms
+Iteration 9: 
+1677 pkts / ms
+2415 pkts / ms
+Iteration 10: 
+1387 pkts / ms
+1673 pkts / ms
+Iteration 11: 
+1874 pkts / ms
+705 pkts / ms
+Iteration 12: 
+1903 pkts / ms
+807 pkts / ms
+Iteration 13: 
+1909 pkts / ms
+1649 pkts / ms
+Iteration 14: 
+1741 pkts / ms
+1587 pkts / ms
+Iteration 15: 
+955 pkts / ms
+996 pkts / ms
+Iteration 16: 
+931 pkts / ms
+818 pkts / ms
+Iteration 17: 
+947 pkts / ms
+930 pkts / ms
+Iteration 18: 
+1073 pkts / ms
+1000 pkts / ms
+Iteration 19: 
+583 pkts / ms
+979 pkts / ms
+Iteration 20: 
+581 pkts / ms
+330 pkts / ms
+Iteration 21: 
+582 pkts / ms
+560 pkts / ms
+Iteration 22: 
+584 pkts / ms
+541 pkts / ms
+Iteration 23: 
+291 pkts / ms
+560 pkts / ms
+Iteration 24: 
+584 pkts / ms
+559 pkts / ms
+Iteration 25: 
+305 pkts / ms
+298 pkts / ms
+Iteration 26: 
+303 pkts / ms
+292 pkts / ms
+Iteration 27: 
+305 pkts / ms
+297 pkts / ms
+Iteration 28: 
+305 pkts / ms
+298 pkts / ms
+Iteration 29: 
+305 pkts / ms
+297 pkts / ms
+Iteration 30: 
+Experiment 2. Dispatcher rate
+747 pkts / ms
+Iteration 31: 
+267 pkts / ms
+Iteration 32: 
+520 pkts / ms
+Iteration 33: 
+640 pkts / ms
+Iteration 34: 
+590 pkts / ms
+Iteration 35: 
+Experiment 3. Speedup with Uniform Load
+246 pkts / ms
+Iteration 36: 
+246 pkts / ms
+Iteration 37: 
+246 pkts / ms
+Iteration 38: 
+245 pkts / ms
+Iteration 39: 
+244 pkts / ms
+Iteration 40: 
+84 pkts / ms
+Iteration 41: 
+83 pkts / ms
+Iteration 42: 
+83 pkts / ms
+Iteration 43: 
+84 pkts / ms
+Iteration 44: 
+84 pkts / ms
+Iteration 45: 
+42 pkts / ms
+Iteration 46: 
+42 pkts / ms
+Iteration 47: 
+42 pkts / ms
+Iteration 48: 
+42 pkts / ms
+Iteration 49: 
+42 pkts / ms
+Iteration 50: 
+Experiment 4. Speedup with Exponentially Distributed Load
+239 pkts / ms
+Iteration 51: 
+241 pkts / ms
+Iteration 52: 
+239 pkts / ms
+Iteration 53: 
+240 pkts / ms
+Iteration 54: 
+240 pkts / ms
+Iteration 55: 
+82 pkts / ms
+Iteration 56: 
+83 pkts / ms
+Iteration 57: 
+82 pkts / ms
+Iteration 58: 
+82 pkts / ms
+Iteration 59: 
+82 pkts / ms
+Iteration 60: 
+41 pkts / ms
+Iteration 61: 
+41 pkts / ms
+Iteration 62: 
+41 pkts / ms
+Iteration 63: 
+41 pkts / ms
+Iteration 64: 
+41 pkts / ms
+Iteration 65: 

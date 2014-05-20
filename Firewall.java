@@ -27,8 +27,8 @@ class SerialFirewall {
     } catch (InterruptedException ignore) {;}      
     timer.stopTimer();
     final long totalCount = workerData.totalPackets;
-    System.out.println("count: " + totalCount);
-    System.out.println("time: " + timer.getElapsedTime());
+    //System.out.println("count: " + totalCount);
+    //System.out.println("time: " + timer.getElapsedTime());
     System.out.println(totalCount/timer.getElapsedTime() + " pkts / ms");
   }
 }
@@ -72,8 +72,8 @@ class SerialQueueFirewall {
     } catch (InterruptedException ignore) {;}      
     timer.stopTimer();
     final long totalCount = workerData.totalPackets;
-    System.out.println("count: " + totalCount);
-    System.out.println("time: " + timer.getElapsedTime());
+    //System.out.println("count: " + totalCount);
+    //System.out.println("time: " + timer.getElapsedTime());
     System.out.println(totalCount/timer.getElapsedTime() + " pkts / ms");
     
   }
@@ -149,8 +149,8 @@ class ParallelFirewall {
     long totalCount = 0;
     for (int i = 0; i < numSources; i++)
 		totalCount += workerData[i].totalPackets;
-    System.out.println("count: " + totalCount);
-    System.out.println("time: " + timer.getElapsedTime());
+    //System.out.println("count: " + totalCount);
+    //System.out.println("time: " + timer.getElapsedTime());
     System.out.println(totalCount/timer.getElapsedTime() + " pkts / ms");
   }
 }
