@@ -20,11 +20,13 @@ do
 		echo "$WORKER SerialFirewall $EXECTIME $THREADS $W True $N $COUNTER"
 		echo "Iteration $COUNTER: " >> $OUTFILE
 		echo -n "$W, $N, " >> $OUTCSV
-		$WORKER SerialFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTCSV
+		#$WORKER SerialFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
+		$WORKER SerialFirewall $EXECTIME $THREADS $W True $N $COUNTER >> netbug-$COUNTER.stdout
 		cat netbug-$COUNTER.stdout >> $OUTCSV
 		COUNTER=$[$COUNTER +1]
 		echo -n "$W, $N, " >> $OUTCSV
-		$WORKER SerialQueueFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
+		#$WORKER SerialQueueFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
+		$WORKER SerialQueueFirewall $EXECTIME $THREADS $W True $N $COUNTER >> netbug-$COUNTER.stdout
 		cat netbug-$COUNTER.stdout >> $OUTCSV
 		COUNTER=$[$COUNTER +1]
 	done
@@ -32,13 +34,15 @@ done
 
 echo "Experiment 2. Dispatcher rate"
 echo "Experiment 2. Dispatcher rate" >> $OUTFILE
+echo "Experiment 2. Dispatcher rate" >> $OUTCSV
 W=1
 for N in 1 2 4 8 12
 do
 	echo "$WORKER ParallelFirewall $EXECTIME $THREADS $W True $N $COUNTER"
 	echo "Iteration $COUNTER: " >> $OUTFILE
 	echo -n "$W, $N, " >> $OUTCSV
-	$WORKER ParallelFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
+	#$WORKER ParallelFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
+	$WORKER ParallelFirewall $EXECTIME $THREADS $W True $N $COUNTER >> netbug-$COUNTER.stdout
 	cat netbug-$COUNTER.stdout >> $OUTCSV
 	COUNTER=$[$COUNTER +1]
 done
@@ -53,15 +57,17 @@ do
 		echo "$WORKER SerialFirewall $EXECTIME $THREADS $W True $N $COUNTER"
 		echo "Iteration $COUNTER: " >> $OUTFILE
 		echo -n "S, $W, $N, " >> $OUTCSV
-		$WORKER SerialFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
-		COUNTER=$[$COUNTER +1]
+		#$WORKER SerialFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
+		$WORKER SerialFirewall $EXECTIME $THREADS $W True $N $COUNTER >> netbug-$COUNTER.stdout
 		cat netbug-$COUNTER.stdout >> $OUTCSV
+		COUNTER=$[$COUNTER +1]
 		echo "$WORKER ParallelFirewall $EXECTIME $THREADS $W True $N $COUNTER"
 		echo "Iteration $COUNTER: " >> $OUTFILE
 		echo -n "P, $W, $N, " >> $OUTCSV
-		$WORKER ParalleFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
-		COUNTER=$[$COUNTER +1]
+		#$WORKER ParalleFirewall $EXECTIME $THREADS $W True $N $COUNTER >> $OUTFILE
+		$WORKER ParalleFirewall $EXECTIME $THREADS $W True $N $COUNTER >> netbug-$COUNTER.stdout
 		cat netbug-$COUNTER.stdout >> $OUTCSV
+		COUNTER=$[$COUNTER +1]
 	done
 done
 
@@ -75,14 +81,16 @@ do
 		echo "$WORKER SerialFirewall $EXECTIME $THREADS $W False $N $COUNTER"
 		echo "Iteration $COUNTER: " >> $OUTFILE
 		echo -n "S, $W, $N, " >> $OUTCSV
-		$WORKER SerialFirewall $EXECTIME $THREADS $W False $N $COUNTER >> $OUTFILE
-		COUNTER=$[$COUNTER +1]
+		#$WORKER SerialFirewall $EXECTIME $THREADS $W False $N $COUNTER >> $OUTFILE
+		$WORKER SerialFirewall $EXECTIME $THREADS $W False $N $COUNTER >> netbug-$COUNTER.stdout
 		cat netbug-$COUNTER.stdout >> $OUTCSV
+		COUNTER=$[$COUNTER +1]
 		echo "$WORKER ParallelFirewall $EXECTIME $THREADS $W False $N $COUNTER"
 		echo "Iteration $COUNTER: " >> $OUTFILE
 		echo -n "P, $W, $N, " >> $OUTCSV
-		$WORKER ParalleFirewall $EXECTIME $THREADS $W False $N $COUNTER >> $OUTFILE
-		COUNTER=$[$COUNTER +1]
+		#$WORKER ParalleFirewall $EXECTIME $THREADS $W False $N $COUNTER >> $OUTFILE
+		$WORKER ParalleFirewall $EXECTIME $THREADS $W False $N $COUNTER >> netbug-$COUNTER.stdout
 		cat netbug-$COUNTER.stdout >> $OUTCSV
+		COUNTER=$[$COUNTER +1]
 	done
 done
